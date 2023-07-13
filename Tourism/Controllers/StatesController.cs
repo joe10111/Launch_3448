@@ -17,5 +17,13 @@ namespace Tourism.Controllers
             var states = _context.States.ToList();
             return View(states);
         }
+
+        [Route("States/{id:int}")]
+        public IActionResult Show(int id)
+        {
+            var states = _context.States.Find(id);
+
+            return View(states);
+        }
     }
 }
