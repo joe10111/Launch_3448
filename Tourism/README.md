@@ -3,9 +3,11 @@
 ## Questions (10 Points)
 
 1. Define MVC and explain the purpose of each of the three parts of this pattern.
-	MVC is shorthand for Model, View, and Controller. MVC is a way of organizing your code into distinct locations in your projects file structure so that only certain systems in code are talking to the correct system. 
+	MVC is shorthand for Model, View, and Controller. MVC is a way of organizing your code into distinct locations in your project's file structure so that only certain systems in the code are talking to the correct system.
+	The Model is where the structure of the c# Class is created. It usually contains an ID, and essential attributes for the model. The controller talks directly with the model and view but the model and view never interact.
+	The controller handles all the logic and database connections. The View handles display all the data that gets passed in from the controller.  
 	
-2. Explain the difference between the **New** route and the **Create** route.
+3. Explain the difference between the **New** route and the **Create** route.
 	A **new** route in context of MVC refers to the URL routes that map incoming requests to certain action methods that have been defined in a corresponding controller. 
 	A **create** route is not a predefined route but is the route that handles submission of forum data for creating a new recorded in the database.  
 
